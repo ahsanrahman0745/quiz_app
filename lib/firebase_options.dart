@@ -25,7 +25,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -56,7 +59,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyACizRImPGMaHiGyafMdEFc7N28OtihvxQ',
-    appId: '1:932809782630:android:b6613204d508bb899d04a7',
+    appId: '1:932809782630:android:84d2def8a7e2de729d04a7',
     messagingSenderId: '932809782630',
     projectId: 'database-300bf',
     databaseURL: 'https://database-300bf-default-rtdb.firebaseio.com',
@@ -65,23 +68,12 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyBK-zSELaKp0JAd4G3i_jKlaIdZyPdTkrA',
-    appId: '1:932809782630:ios:86ba8ae5f8faa8959d04a7',
+    appId: '1:932809782630:ios:142e09b6dc20718b9d04a7',
     messagingSenderId: '932809782630',
     projectId: 'database-300bf',
     databaseURL: 'https://database-300bf-default-rtdb.firebaseio.com',
     storageBucket: 'database-300bf.appspot.com',
-    iosClientId: '932809782630-3mlgu9v23cl0ntsg90shea6q5jrbo9tk.apps.googleusercontent.com',
-    iosBundleId: 'com.example.untitled7',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBK-zSELaKp0JAd4G3i_jKlaIdZyPdTkrA',
-    appId: '1:932809782630:ios:86ba8ae5f8faa8959d04a7',
-    messagingSenderId: '932809782630',
-    projectId: 'database-300bf',
-    databaseURL: 'https://database-300bf-default-rtdb.firebaseio.com',
-    storageBucket: 'database-300bf.appspot.com',
-    iosClientId: '932809782630-3mlgu9v23cl0ntsg90shea6q5jrbo9tk.apps.googleusercontent.com',
-    iosBundleId: 'com.example.untitled7',
+    iosClientId: '932809782630-f0g803fj62c7dv4rjl14fjtvmtph3nde.apps.googleusercontent.com',
+    iosBundleId: 'com.dev.quizApp',
   );
 }
