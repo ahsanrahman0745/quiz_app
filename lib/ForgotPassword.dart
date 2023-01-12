@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:untitled7/SignUp.dart';
+import 'package:quiz_app/SignUp.dart';
 
-class forgot_password extends StatefulWidget {
+class forgot_password extends StatefulWidget{
   const forgot_password({Key? key}) : super(key: key);
 
   @override
